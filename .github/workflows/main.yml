@@ -25,6 +25,8 @@ jobs:
     - name: Run script
       run: python fetch.py
     - name: push changes
-      uses:  ad-m/github-push-action@master
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
 
     
