@@ -24,6 +24,11 @@ jobs:
   
     - name: Run script
       run: python fetch.py
+    - name: submit changes
+      run:
+        git config --local user.email '${{ secrets.EMAIL }}'
+        git config --local user.name '${{ secrets.NAME }}'
+        git add ./nodes.txt
     - name: push changes
       uses: ad-m/github-push-action@master
       with:
