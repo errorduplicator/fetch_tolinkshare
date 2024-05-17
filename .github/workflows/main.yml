@@ -24,12 +24,5 @@ jobs:
   
     - name: Run script
       run: python fetch.py
-    - name: Commit and Push Changes
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add .
-          git commit -m 'nodes.txt'
-          git push
 
     
