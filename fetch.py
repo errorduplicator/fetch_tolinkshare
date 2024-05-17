@@ -24,6 +24,7 @@ end_index = text.find(end_phrase)
 # Extract the chunk of text between the phrases
 if start_index != -1 and end_index != -1:
     chunk = text[start_index + len(start_phrase):end_index].strip()
-    print(chunk)
 else:
     print("Start or end phrase not found in the text.")
+file = open('nodes.txt','w')
+file.write(text)
