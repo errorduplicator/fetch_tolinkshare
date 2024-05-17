@@ -27,4 +27,4 @@ if start_index != -1 and end_index != -1:
 else:
     print("Start or end phrase not found in the text.")
 file = open('nodes.txt','w')
-file.write(text)
+file.write(chunk)
