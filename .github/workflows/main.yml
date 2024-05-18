@@ -24,3 +24,11 @@ jobs:
   
     - name: Run script
       run: python fetch.py > nodes.txt
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'errorduplicator'
+        git config --global user.email '18952252910@189.cn'
+        git add nodes.txt
+        git commit -m "Update nodes.txt"
+        git push
+
