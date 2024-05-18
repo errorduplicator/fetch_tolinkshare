@@ -32,4 +32,4 @@ jobs:
         git config --global user.email '18952252910@189.cn'
         git add nodes.txt
         git commit -m "Update nodes.txt"
-        git push origin main
+        git push
