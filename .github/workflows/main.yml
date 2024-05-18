@@ -2,7 +2,7 @@ name: update
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '*1 * * * *'
+    - cron: '*01 * * * *'
     - cron: '*21 * * * *'
     - cron: '*41 * * * *'
 jobs:
